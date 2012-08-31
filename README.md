@@ -27,6 +27,11 @@ $client->query('igor.io', function ($result) {
 });
 ```
 
+## Todo
+
+* Provide convenience connection factory (maybe in react core)
+* Use react/dns dependency once it is merged
+
 ## Tests
 
 To run the test suite, you need PHPUnit.
