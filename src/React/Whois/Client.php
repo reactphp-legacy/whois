@@ -28,8 +28,6 @@ class Client
             ),
             $callback
         );
-
-        // $callback("Domain \"IGOR.IO\" - Not available\nFor more information please go to http://www.nic.io/\n");
     }
 
     public function init($domain, $callback)
