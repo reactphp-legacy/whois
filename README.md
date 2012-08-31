@@ -31,6 +31,7 @@ $client->query('igor.io', function ($result) {
 
 * Provide convenience connection factory (maybe in react core)
 * Use react/dns dependency once it is merged
+* Streaming whois body
 
 ## Tests
 
