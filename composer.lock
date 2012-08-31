@@ -1,5 +1,5 @@
 {
-    "hash": "5fdeed4b03a496748f68daa24f253f2c",
+    "hash": "daa2f93c4ec30ae37d288a1e98137930",
     "packages": [
         {
             "package": "evenement/evenement",
@@ -32,10 +32,22 @@
             "commit-date": "1343051648"
         },
         {
+            "package": "react/async",
+            "version": "dev-master",
+            "source-reference": "42b3f74abb8e1984267d0899c0252ab1cc509059",
+            "commit-date": "1346151501"
+        },
+        {
+            "package": "react/curry",
+            "version": "dev-master",
+            "source-reference": "9f0c1c55b1a44710b777ed5a892f4949e8edb93d",
+            "commit-date": "1346387315"
+        },
+        {
             "package": "react/react",
             "version": "dev-dns",
-            "source-reference": "a295835631d6384e1a6a05154498969d942d5533",
-            "commit-date": "1346380123"
+            "source-reference": "a6d0f881dc3190f1788716fe14c8c286fa2cca97",
+            "commit-date": "1346385777"
         },
         {
             "package": "silex/silex",
@@ -104,6 +116,8 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
+        "react/async": 20,
+        "react/curry": 20,
         "react/react": 20
     }
 }

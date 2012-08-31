@@ -18,6 +18,15 @@ The recommended way to install react/whois is [through composer](http://getcompo
 
 ## Example
 
+```php
+<?php
+
+$client = new React\Whois\Client($resolver, $connFactory);
+$client->query('igor.io', function ($result) {
+    echo $result;
+});
+```
+
 ## Tests
 
 To run the test suite, you need PHPUnit.
