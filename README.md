@@ -1,6 +1,6 @@
 # React/Whois
 
-Whois implementation based on React.
+Whois client based on React.
 
 [![Build Status](https://secure.travis-ci.org/react-php/whois.png?branch=master)](http://travis-ci.org/react-php/whois)
 

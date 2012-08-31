@@ -1,7 +1,7 @@
 {
     "minimum-stability": "dev",
     "name": "react/whois",
-    "description": "Whois implementation based on React.",
+    "description": "Whois client based on React.",
     "keywords": ["whois"],
     "license": "MIT",
     "require": {
