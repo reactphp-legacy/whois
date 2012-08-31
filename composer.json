@@ -1,0 +1,20 @@
+{
+    "minimum-stability": "dev",
+    "name": "react/whois",
+    "description": "Whois implementation based on React.",
+    "keywords": ["whois"],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.2",
+        "evenement/evenement": "1.0.*",
+        "react/react": "dev-dns"
+    },
+    "_require": {
+        "php": ">=5.3.2",
+        "react/socket": "0.1.*",
+        "react/dns": "0.1.*"
+    },
+    "autoload": {
+        "psr-0": { "React\\Whois": "src" }
+    }
+}
