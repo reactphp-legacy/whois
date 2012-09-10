@@ -1,35 +1,11 @@
 {
-    "hash": "daa2f93c4ec30ae37d288a1e98137930",
+    "hash": "58ecd3caf4ab0b7382973d54641dcb06",
     "packages": [
         {
             "package": "evenement/evenement",
             "version": "1.0.x-dev",
             "source-reference": "v1.0.0",
             "commit-date": "1338390068"
-        },
-        {
-            "package": "guzzle/common",
-            "version": "v2.8.5"
-        },
-        {
-            "package": "guzzle/http",
-            "version": "v2.8.5"
-        },
-        {
-            "package": "guzzle/parser",
-            "version": "v2.8.5"
-        },
-        {
-            "package": "pimple/pimple",
-            "version": "dev-master",
-            "alias-pretty-version": "1.0.x-dev",
-            "alias-version": "1.0.9999999.9999999-dev"
-        },
-        {
-            "package": "pimple/pimple",
-            "version": "dev-master",
-            "source-reference": "db836b8cfadc0f39dacafa2bf311a1ab603600bb",
-            "commit-date": "1343051648"
         },
         {
             "package": "react/async",
@@ -40,84 +16,35 @@
         {
             "package": "react/curry",
             "version": "dev-master",
-            "source-reference": "9f0c1c55b1a44710b777ed5a892f4949e8edb93d",
-            "commit-date": "1346387315"
+            "source-reference": "d2ab4a0ffd5c07f32db45a23a0cad2daef986d49",
+            "commit-date": "1346437355"
         },
         {
-            "package": "react/react",
-            "version": "dev-dns",
-            "source-reference": "a6d0f881dc3190f1788716fe14c8c286fa2cca97",
-            "commit-date": "1346385777"
+            "package": "react/dns",
+            "version": "v0.2.0"
         },
         {
-            "package": "silex/silex",
-            "version": "dev-master",
-            "alias-pretty-version": "1.0.x-dev",
-            "alias-version": "1.0.9999999.9999999-dev"
+            "package": "react/event-loop",
+            "version": "v0.2.0"
         },
         {
-            "package": "silex/silex",
-            "version": "dev-master",
-            "source-reference": "52c6480be194825489f316d30855645dafa7fae4",
-            "commit-date": "1346332220"
+            "package": "react/socket",
+            "version": "v0.2.0"
         },
         {
-            "package": "symfony/event-dispatcher",
-            "version": "dev-master",
-            "alias-pretty-version": "2.1.x-dev",
-            "alias-version": "2.1.9999999.9999999-dev"
-        },
-        {
-            "package": "symfony/event-dispatcher",
-            "version": "dev-master",
-            "source-reference": "v2.1.0-RC2",
-            "commit-date": "1345643321"
-        },
-        {
-            "package": "symfony/http-foundation",
-            "version": "dev-master",
-            "alias-pretty-version": "2.1.x-dev",
-            "alias-version": "2.1.9999999.9999999-dev"
-        },
-        {
-            "package": "symfony/http-foundation",
-            "version": "dev-master",
-            "source-reference": "c61c023d2e9e9ad2edcc9227bd0ec5f79d616e18",
-            "commit-date": "1346312580"
-        },
-        {
-            "package": "symfony/http-kernel",
-            "version": "dev-master",
-            "alias-pretty-version": "2.1.x-dev",
-            "alias-version": "2.1.9999999.9999999-dev"
-        },
-        {
-            "package": "symfony/http-kernel",
-            "version": "dev-master",
-            "source-reference": "aeffdc93a69b65dad2f61c917f73c84b8e387ba4",
-            "commit-date": "1346143430"
-        },
-        {
-            "package": "symfony/routing",
-            "version": "dev-master",
-            "alias-pretty-version": "2.1.x-dev",
-            "alias-version": "2.1.9999999.9999999-dev"
-        },
-        {
-            "package": "symfony/routing",
-            "version": "dev-master",
-            "source-reference": "20633ec11b727ad0916812810751ef89cfff2985",
-            "commit-date": "1346337330"
+            "package": "react/stream",
+            "version": "v0.2.0"
         }
     ],
-    "packages-dev": null,
+    "packages-dev": [
+
+    ],
     "aliases": [
 
     ],
     "minimum-stability": "dev",
     "stability-flags": {
         "react/async": 20,
-        "react/curry": 20,
-        "react/react": 20
+        "react/curry": 20
     }
 }
