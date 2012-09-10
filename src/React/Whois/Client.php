@@ -5,7 +5,6 @@ namespace React\Whois;
 use React\Async\Util as Async;
 use React\Curry\Util as Curry;
 use React\Dns\Resolver\Resolver;
-use React\Socket\ConnectionInterface;
 
 class Client
 {
