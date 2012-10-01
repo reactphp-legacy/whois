@@ -21,17 +21,11 @@ class Client
     {
         Async::waterfall(
             array(
-                Curry::bind(array($this, 'init'), $domain),
-                array($this, 'resolveWhoisServer'),
+                Curry::bind(array($this, 'resolveWhoisServer'), $domain),
                 Curry::bind(array($this, 'queryWhoisServer'), $domain),
             ),
             $callback
         );
-    }
-
-    public function init($domain, $callback)
-    {
-        $callback($domain);
     }
 
     public function resolveWhoisServer($domain, $callback)
