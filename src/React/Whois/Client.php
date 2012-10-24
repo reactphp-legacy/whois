@@ -34,7 +34,7 @@ class Client
 
         $this->dns->resolve($target, array($deferred, 'resolve'));
 
-        return $deferred;
+        return $deferred->promise();
     }
 
     public function queryWhoisServer($domain, $ip)
@@ -53,6 +53,6 @@ class Client
             $deferred->resolve($result);
         });
 
-        return $deferred;
+        return $deferred->promise();
     }
 }
