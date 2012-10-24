@@ -1,5 +1,5 @@
 {
-    "hash": "c5801492e1352f42fde3ff34b0e887a9",
+    "hash": "f33b8fc8ec62943afd27b83864ad07c0",
     "packages": [
         {
             "name": "evenement/evenement",
@@ -26,44 +26,6 @@
                     "Evenement": "src"
                 }
             }
-        },
-        {
-            "name": "jsor/promise",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jsor/promise",
-                "reference": "009a606c81997bc6f74cba93be53820eeeee6ad6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/jsor/promise/zipball/009a606c81997bc6f74cba93be53820eeeee6ad6",
-                "reference": "009a606c81997bc6f74cba93be53820eeeee6ad6",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "time": "1350938834",
-            "type": "library",
-            "installation-source": "source",
-            "autoload": {
-                "psr-0": {
-                    "Promise": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jan Sorgalla",
-                    "email": "jsorgalla@googlemail.com",
-                    "homepage": "http://sorgalla.com",
-                    "role": "maintainer"
-                }
-            ],
-            "description": "A lightweight implementation of CommonJS Promises/A for PHP"
         },
         {
             "name": "react/curry",
@@ -179,6 +141,44 @@
             ]
         },
         {
+            "name": "react/promise",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/react-php/promise",
+                "reference": "e7bdf9dab084b38c1de5c9d3a0952da0bdf10a9c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/react-php/promise/zipball/e7bdf9dab084b38c1de5c9d3a0952da0bdf10a9c",
+                "reference": "e7bdf9dab084b38c1de5c9d3a0952da0bdf10a9c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "time": "1351104737",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "React\\Promise": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Sorgalla",
+                    "email": "jsorgalla@googlemail.com",
+                    "homepage": "http://sorgalla.com",
+                    "role": "maintainer"
+                }
+            ],
+            "description": "A lightweight implementation of CommonJS Promises/A for PHP"
+        },
+        {
             "name": "react/socket",
             "version": "v0.2.1",
             "target-dir": "React/Socket",
@@ -271,7 +271,7 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "jsor/promise": 20,
-        "react/curry": 20
+        "react/curry": 20,
+        "react/promise": 20
     }
 }

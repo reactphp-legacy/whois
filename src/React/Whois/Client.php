@@ -2,7 +2,7 @@
 
 namespace React\Whois;
 
-use Promise\Deferred as Deferred;
+use React\Promise\Deferred;
 use React\Curry\Util as Curry;
 use React\Dns\Resolver\Resolver;
 
