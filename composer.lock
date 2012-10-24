@@ -1,50 +1,277 @@
 {
-    "hash": "58ecd3caf4ab0b7382973d54641dcb06",
+    "hash": "c5801492e1352f42fde3ff34b0e887a9",
     "packages": [
         {
-            "package": "evenement/evenement",
+            "name": "evenement/evenement",
             "version": "1.0.x-dev",
-            "source-reference": "v1.0.0",
-            "commit-date": "1338390068"
+            "source": {
+                "type": "git",
+                "url": "https://github.com/igorw/evenement",
+                "reference": "v1.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/igorw/evenement/zipball/v1.0.0",
+                "reference": "v1.0.0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "time": "1338390068",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Evenement": "src"
+                }
+            }
         },
         {
-            "package": "react/async",
+            "name": "jsor/promise",
             "version": "dev-master",
-            "source-reference": "42b3f74abb8e1984267d0899c0252ab1cc509059",
-            "commit-date": "1346151501"
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jsor/promise",
+                "reference": "009a606c81997bc6f74cba93be53820eeeee6ad6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/jsor/promise/zipball/009a606c81997bc6f74cba93be53820eeeee6ad6",
+                "reference": "009a606c81997bc6f74cba93be53820eeeee6ad6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "time": "1350938834",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Promise": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Sorgalla",
+                    "email": "jsorgalla@googlemail.com",
+                    "homepage": "http://sorgalla.com",
+                    "role": "maintainer"
+                }
+            ],
+            "description": "A lightweight implementation of CommonJS Promises/A for PHP"
         },
         {
-            "package": "react/curry",
+            "name": "react/curry",
             "version": "dev-master",
-            "source-reference": "d2ab4a0ffd5c07f32db45a23a0cad2daef986d49",
-            "commit-date": "1346437355"
+            "source": {
+                "type": "git",
+                "url": "https://github.com/react-php/curry",
+                "reference": "6cc0b8b012eb26e96d3480328710373347e6a154"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/react-php/curry/zipball/6cc0b8b012eb26e96d3480328710373347e6a154",
+                "reference": "6cc0b8b012eb26e96d3480328710373347e6a154",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "time": "1348264992",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "React\\Curry": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Partial function application.",
+            "keywords": [
+                "curry",
+                "currying",
+                "functional-programming"
+            ]
         },
         {
-            "package": "react/dns",
-            "version": "v0.2.0"
+            "name": "react/dns",
+            "version": "v0.2.1",
+            "target-dir": "React/Dns",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/react-php/dns",
+                "reference": "v0.2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/react-php/dns/zipball/v0.2.1",
+                "reference": "v0.2.1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "react/socket": "0.2.*"
+            },
+            "time": "2012-09-24 07:50:30",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-0": {
+                    "React\\Dns": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Async DNS resolver.",
+            "keywords": [
+                "dns",
+                "dns-resolver"
+            ]
         },
         {
-            "package": "react/event-loop",
-            "version": "v0.2.0"
+            "name": "react/event-loop",
+            "version": "v0.2.1",
+            "target-dir": "React/EventLoop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/react-php/event-loop.git",
+                "reference": "v0.2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/react-php/event-loop/zipball/v0.2.1",
+                "reference": "v0.2.1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-libevent": ">=0.0.5"
+            },
+            "time": "2012-09-10 05:53:22",
+            "type": "library",
+            "extra": {
+                "branch-alias": [
+
+                ]
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-0": {
+                    "React\\EventLoop": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Event loop abstraction layer that libraries can use for evented I/O.",
+            "keywords": [
+                "event-loop"
+            ]
         },
         {
-            "package": "react/socket",
-            "version": "v0.2.0"
+            "name": "react/socket",
+            "version": "v0.2.1",
+            "target-dir": "React/Socket",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/react-php/socket.git",
+                "reference": "v0.2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/react-php/socket/zipball/v0.2.1",
+                "reference": "v0.2.1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "evenement/evenement": "1.0.*",
+                "react/event-loop": "0.2.*",
+                "react/stream": "0.2.*"
+            },
+            "time": "2012-09-10 05:56:19",
+            "type": "library",
+            "extra": {
+                "branch-alias": [
+
+                ]
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-0": {
+                    "React\\Socket": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Library for building an evented socket server.",
+            "keywords": [
+                "Socket"
+            ]
         },
         {
-            "package": "react/stream",
-            "version": "v0.2.0"
+            "name": "react/stream",
+            "version": "v0.2.1",
+            "target-dir": "React/Stream",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/react-php/stream",
+                "reference": "v0.2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/react-php/stream/zipball/v0.2.1",
+                "reference": "v0.2.1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "evenement/evenement": "1.0.*"
+            },
+            "suggest": {
+                "react/event-loop": "0.2.*"
+            },
+            "time": "2012-10-13 13:12:04",
+            "type": "library",
+            "extra": {
+                "branch-alias": [
+
+                ]
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-0": {
+                    "React\\Stream": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Basic readable and writable stream interfaces that support piping.",
+            "keywords": [
+                "stream",
+                "pipe"
+            ]
         }
     ],
-    "packages-dev": [
-
-    ],
+    "packages-dev": null,
     "aliases": [
 
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "react/async": 20,
+        "jsor/promise": 20,
         "react/curry": 20
     }
 }

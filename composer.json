@@ -6,7 +6,7 @@
     "license": "MIT",
     "require": {
         "php": ">=5.3.2",
-        "react/async": "dev-master",
+        "jsor/promise": "dev-master",
         "react/curry": "dev-master",
         "react/dns": "0.2.*",
         "react/socket": "0.2.*"

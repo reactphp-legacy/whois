@@ -2,42 +2,45 @@
 
 namespace React\Whois;
 
-use React\Async\Util as Async;
+use Promise\Deferred as Deferred;
 use React\Curry\Util as Curry;
 use React\Dns\Resolver\Resolver;
 
 class Client
 {
-    private $resolver;
+    private $dns;
     private $connFactory;
 
-    public function __construct(Resolver $resolver, $connFactory)
+    public function __construct(Resolver $dns, $connFactory)
     {
-        $this->resolver = $resolver;
+        $this->dns = $dns;
         $this->connFactory = $connFactory;
     }
 
     public function query($domain, $callback)
     {
-        Async::waterfall(
-            array(
-                Curry::bind(array($this, 'resolveWhoisServer'), $domain),
-                Curry::bind(array($this, 'queryWhoisServer'), $domain),
-            ),
-            $callback
-        );
+        $this
+            ->resolveWhoisServer($domain)
+            ->then(Curry::bind(array($this, 'queryWhoisServer'), $domain))
+            ->then($callback);
     }
 
-    public function resolveWhoisServer($domain, $callback)
+    public function resolveWhoisServer($domain)
     {
+        $deferred = new Deferred();
+
         $tld = substr(strrchr($domain, '.'), 1);
         $target = $tld.'.whois-servers.net';
 
-        $this->resolver->resolve($target, $callback);
+        $this->dns->resolve($target, array($deferred, 'resolve'));
+
+        return $deferred;
     }
 
-    public function queryWhoisServer($domain, $ip, $callback)
+    public function queryWhoisServer($domain, $ip)
     {
+        $deferred = new Deferred();
+
         $result = '';
 
         $conn = call_user_func($this->connFactory, $ip);
@@ -45,9 +48,11 @@ class Client
         $conn->on('data', function ($data) use (&$result) {
             $result .= $data;
         });
-        $conn->on('close', function () use (&$result, $callback) {
+        $conn->on('close', function () use (&$result, $deferred) {
             $result = str_replace("\r\n", "\n", $result);
-            $callback($result);
+            $deferred->resolve($result);
         });
+
+        return $deferred;
     }
 }
