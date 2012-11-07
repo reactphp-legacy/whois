@@ -1,5 +1,5 @@
 {
-    "hash": "c81120a1f6c2e3f0050ff3fc9a6b44ce",
+    "hash": "1edd7eb3cbc7e76af1041afd0d1b9b66",
     "packages": [
         {
             "name": "evenement/evenement",
@@ -48,23 +48,28 @@
         },
         {
             "name": "react/curry",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/curry",
-                "reference": "36b3688c27a6f51368fe73364cc84f2d12a700b1"
+                "reference": "v1.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reactphp/curry/zipball/36b3688c27a6f51368fe73364cc84f2d12a700b1",
-                "reference": "36b3688c27a6f51368fe73364cc84f2d12a700b1",
+                "url": "https://github.com/reactphp/curry/archive/v1.0.0.zip",
+                "reference": "v1.0.0",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
-            "time": "1351351089",
+            "time": "2012-11-07 22:56:31",
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
             "installation-source": "source",
             "autoload": {
                 "psr-0": {
@@ -161,23 +166,28 @@
         },
         {
             "name": "react/promise",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/promise",
-                "reference": "22dc5c275d548880677dca91f94d1e6104b5e6fa"
+                "reference": "v1.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reactphp/promise/archive/22dc5c275d548880677dca91f94d1e6104b5e6fa.zip",
-                "reference": "22dc5c275d548880677dca91f94d1e6104b5e6fa",
+                "url": "https://github.com/reactphp/promise/archive/v1.0.0.zip",
+                "reference": "v1.0.0",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
-            "time": "1352316968",
+            "time": "2012-11-07 21:24:54",
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
             "installation-source": "source",
             "autoload": {
                 "psr-0": {
@@ -289,8 +299,7 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "react/curry": 20,
-        "react/promise": 20
-    }
+    "stability-flags": [
+
+    ]
 }
