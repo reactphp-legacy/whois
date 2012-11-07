@@ -17,12 +17,11 @@ class Client
         $this->connFactory = $connFactory;
     }
 
-    public function query($domain, $callback)
+    public function query($domain)
     {
-        $this
+        return $this
             ->resolveWhoisServer($domain)
-            ->then(Curry::bind(array($this, 'queryWhoisServer'), $domain))
-            ->then($callback);
+            ->then(Curry::bind(array($this, 'queryWhoisServer'), $domain));
     }
 
     public function resolveWhoisServer($domain)

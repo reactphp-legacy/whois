@@ -38,7 +38,9 @@ class ClientTest extends TestCase
         };
 
         $client = new Client($resolver, $connFactory);
-        $client->query('igor.io', $callback);
+        $client
+            ->query('igor.io')
+            ->then($callback);
 
         $conn->emit('data', array($result));
         $conn->emit('close');
