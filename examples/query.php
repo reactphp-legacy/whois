@@ -14,9 +14,11 @@ $connFactory = function ($ip) use ($loop) {
 $domain = 'igor.io';
 
 $client = new React\Whois\Client($resolver, $connFactory);
-$client->query($domain, function ($result) {
-    echo $result;
-});
+$client
+    ->query($domain)
+    ->then(function ($result) {
+        echo $result;
+    });
 
 echo "Getting whois for $domain...\n";
 
