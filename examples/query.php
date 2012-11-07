@@ -5,11 +5,7 @@ require __DIR__.'/../vendor/autoload.php';
 $loop = React\EventLoop\Factory::create();
 $factory = new React\Dns\Resolver\Factory();
 $resolver = $factory->create('8.8.8.8', $loop);
-
-$connFactory = function ($ip) use ($loop) {
-    $fd = stream_socket_client("tcp://$ip:43");
-    return new React\Socket\Connection($fd, $loop);
-};
+$connFactory = new React\Whois\ConnectionFactory($loop);
 
 $domain = 'igor.io';
 
