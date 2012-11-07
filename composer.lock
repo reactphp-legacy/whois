@@ -1,5 +1,5 @@
 {
-    "hash": "f33b8fc8ec62943afd27b83864ad07c0",
+    "hash": "c81120a1f6c2e3f0050ff3fc9a6b44ce",
     "packages": [
         {
             "name": "evenement/evenement",
@@ -7,44 +7,63 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/igorw/evenement",
-                "reference": "v1.0.0"
+                "reference": "e3069e43228cba12f3e6e76ad53401232f9bacfb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/igorw/evenement/zipball/v1.0.0",
-                "reference": "v1.0.0",
+                "url": "https://github.com/igorw/evenement/zipball/e3069e43228cba12f3e6e76ad53401232f9bacfb",
+                "reference": "e3069e43228cba12f3e6e76ad53401232f9bacfb",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
-            "time": "1338390068",
+            "time": "1351867497",
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
             "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Evenement": "src"
                 }
-            }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Igor Wiedler",
+                    "email": "igor@wiedler.ch",
+                    "homepage": "http://wiedler.ch/igor/"
+                }
+            ],
+            "description": "Événement is a very simple event dispatching library for PHP 5.3",
+            "keywords": [
+                "event-dispatcher"
+            ]
         },
         {
             "name": "react/curry",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/react-php/curry",
-                "reference": "6cc0b8b012eb26e96d3480328710373347e6a154"
+                "url": "https://github.com/reactphp/curry",
+                "reference": "36b3688c27a6f51368fe73364cc84f2d12a700b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/react-php/curry/zipball/6cc0b8b012eb26e96d3480328710373347e6a154",
-                "reference": "6cc0b8b012eb26e96d3480328710373347e6a154",
+                "url": "https://github.com/reactphp/curry/zipball/36b3688c27a6f51368fe73364cc84f2d12a700b1",
+                "reference": "36b3688c27a6f51368fe73364cc84f2d12a700b1",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
-            "time": "1348264992",
+            "time": "1351351089",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -64,24 +83,24 @@
         },
         {
             "name": "react/dns",
-            "version": "v0.2.1",
+            "version": "v0.2.2",
             "target-dir": "React/Dns",
             "source": {
                 "type": "git",
-                "url": "https://github.com/react-php/dns",
-                "reference": "v0.2.1"
+                "url": "https://github.com/reactphp/dns",
+                "reference": "v0.2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/react-php/dns/zipball/v0.2.1",
-                "reference": "v0.2.1",
+                "url": "https://github.com/reactphp/dns/zipball/v0.2.2",
+                "reference": "v0.2.2",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2",
                 "react/socket": "0.2.*"
             },
-            "time": "2012-09-24 07:50:30",
+            "time": "2012-10-24 08:04:15",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -100,17 +119,17 @@
         },
         {
             "name": "react/event-loop",
-            "version": "v0.2.1",
+            "version": "dev-master",
             "target-dir": "React/EventLoop",
             "source": {
                 "type": "git",
-                "url": "https://github.com/react-php/event-loop.git",
-                "reference": "v0.2.1"
+                "url": "https://github.com/reactphp/event-loop",
+                "reference": "9388c315bd2ef516ce465fd7de6d179f5c450fbc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/react-php/event-loop/zipball/v0.2.1",
-                "reference": "v0.2.1",
+                "url": "https://github.com/reactphp/event-loop/archive/9388c315bd2ef516ce465fd7de6d179f5c450fbc.zip",
+                "reference": "9388c315bd2ef516ce465fd7de6d179f5c450fbc",
                 "shasum": ""
             },
             "require": {
@@ -119,14 +138,14 @@
             "suggest": {
                 "ext-libevent": ">=0.0.5"
             },
-            "time": "2012-09-10 05:53:22",
+            "time": "1352121935",
             "type": "library",
             "extra": {
-                "branch-alias": [
-
-                ]
+                "branch-alias": {
+                    "dev-master": "0.2-dev"
+                }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "React\\EventLoop": ""
@@ -145,19 +164,19 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/react-php/promise",
-                "reference": "e7bdf9dab084b38c1de5c9d3a0952da0bdf10a9c"
+                "url": "https://github.com/reactphp/promise",
+                "reference": "22dc5c275d548880677dca91f94d1e6104b5e6fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/react-php/promise/zipball/e7bdf9dab084b38c1de5c9d3a0952da0bdf10a9c",
-                "reference": "e7bdf9dab084b38c1de5c9d3a0952da0bdf10a9c",
+                "url": "https://github.com/reactphp/promise/archive/22dc5c275d548880677dca91f94d1e6104b5e6fa.zip",
+                "reference": "22dc5c275d548880677dca91f94d1e6104b5e6fa",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
-            "time": "1351104737",
+            "time": "1352316968",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -180,33 +199,33 @@
         },
         {
             "name": "react/socket",
-            "version": "v0.2.1",
+            "version": "dev-master",
             "target-dir": "React/Socket",
             "source": {
                 "type": "git",
-                "url": "https://github.com/react-php/socket.git",
-                "reference": "v0.2.1"
+                "url": "https://github.com/reactphp/socket",
+                "reference": "84ea91324b8f621efd34679dad4600f8e61b7021"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/react-php/socket/zipball/v0.2.1",
-                "reference": "v0.2.1",
+                "url": "https://github.com/reactphp/socket/archive/84ea91324b8f621efd34679dad4600f8e61b7021.zip",
+                "reference": "84ea91324b8f621efd34679dad4600f8e61b7021",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3",
                 "evenement/evenement": "1.0.*",
+                "php": ">=5.3.3",
                 "react/event-loop": "0.2.*",
                 "react/stream": "0.2.*"
             },
-            "time": "2012-09-10 05:56:19",
+            "time": "1352121935",
             "type": "library",
             "extra": {
-                "branch-alias": [
-
-                ]
+                "branch-alias": {
+                    "dev-master": "0.2-dev"
+                }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "React\\Socket": ""
@@ -222,34 +241,34 @@
         },
         {
             "name": "react/stream",
-            "version": "v0.2.1",
+            "version": "dev-master",
             "target-dir": "React/Stream",
             "source": {
                 "type": "git",
-                "url": "https://github.com/react-php/stream",
-                "reference": "v0.2.1"
+                "url": "https://github.com/reactphp/stream",
+                "reference": "f44ee584058dbd30d471a4c210071a5618e61545"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/react-php/stream/zipball/v0.2.1",
-                "reference": "v0.2.1",
+                "url": "https://github.com/reactphp/stream/archive/f44ee584058dbd30d471a4c210071a5618e61545.zip",
+                "reference": "f44ee584058dbd30d471a4c210071a5618e61545",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3",
-                "evenement/evenement": "1.0.*"
+                "evenement/evenement": "1.0.*",
+                "php": ">=5.3.3"
             },
             "suggest": {
                 "react/event-loop": "0.2.*"
             },
-            "time": "2012-10-13 13:12:04",
+            "time": "1352121935",
             "type": "library",
             "extra": {
-                "branch-alias": [
-
-                ]
+                "branch-alias": {
+                    "dev-master": "0.2-dev"
+                }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "React\\Stream": ""
@@ -269,7 +288,7 @@
     "aliases": [
 
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": {
         "react/curry": 20,
         "react/promise": 20
