@@ -29,7 +29,7 @@ class ClientTest extends TestCase
 
         $conn = $this->getMockBuilder('React\Whois\Stub\ConnectionStub')
             ->setMethods(array(
-                'isReadable', 'pause', 'getRemoteAddress', 'resume', 'pipe', 'close', 'isWritable', 'write', 'end',
+                'isReadable', 'pause', 'getRemoteAddress', 'resume', 'close', 'isWritable', 'write', 'end',
             ))
             ->getMock();
 
@@ -43,6 +43,6 @@ class ClientTest extends TestCase
             ->then($callback);
 
         $conn->emit('data', array($result));
-        $conn->emit('close');
+        $conn->emit('end');
     }
 }

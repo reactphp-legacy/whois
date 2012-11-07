@@ -5,6 +5,7 @@ namespace React\Whois;
 use React\Promise\Deferred;
 use React\Curry\Util as Curry;
 use React\Dns\Resolver\Resolver;
+use React\Stream\ReadableStreamInterface;
 
 class Client
 {
@@ -38,20 +39,24 @@ class Client
 
     public function queryWhoisServer($domain, $ip)
     {
-        $deferred = new Deferred();
-
-        $result = '';
-
         $conn = call_user_func($this->connFactory, $ip);
         $conn->write("$domain\r\n");
-        $conn->on('data', function ($data) use (&$result) {
-            $result .= $data;
-        });
-        $conn->on('close', function () use (&$result, $deferred) {
-            $result = str_replace("\r\n", "\n", $result);
-            $deferred->resolve($result);
-        });
 
-        return $deferred->promise();
+        return $this
+            ->streamGetContents($conn)
+            ->then(array($this, 'normalizeLinefeeds'));
+    }
+
+    public function normalizeLinefeeds($data)
+    {
+        return str_replace("\r\n", "\n", $data);
+    }
+
+    public function streamGetContents(ReadableStreamInterface $input)
+    {
+        $contents = new BufferedStreamPromise();
+        $input->pipe($contents);
+
+        return $contents;
     }
 }
