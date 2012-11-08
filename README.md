@@ -11,7 +11,7 @@ The recommended way to install react/whois is [through composer](http://getcompo
 ```JSON
 {
     "require": {
-        "react/whois": "dev-master"
+        "react/whois": "0.1.*"
     }
 }
 ```

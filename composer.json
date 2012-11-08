@@ -13,5 +13,10 @@
     },
     "autoload": {
         "psr-0": { "React\\Whois": "src" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
     }
 }
