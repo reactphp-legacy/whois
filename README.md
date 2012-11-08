@@ -22,9 +22,11 @@ The recommended way to install react/whois is [through composer](http://getcompo
 <?php
 
 $client = new React\Whois\Client($resolver, $connFactory);
-$client->query('igor.io', function ($result) {
-    echo $result;
-});
+$client
+    ->query('igor.io')
+    ->then(function ($result) {
+        echo $result;
+    });
 ```
 
 ## Todo
