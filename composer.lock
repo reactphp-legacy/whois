@@ -3,29 +3,24 @@
     "packages": [
         {
             "name": "evenement/evenement",
-            "version": "1.0.x-dev",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/igorw/evenement",
-                "reference": "e3069e43228cba12f3e6e76ad53401232f9bacfb"
+                "reference": "v1.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/igorw/evenement/zipball/e3069e43228cba12f3e6e76ad53401232f9bacfb",
-                "reference": "e3069e43228cba12f3e6e76ad53401232f9bacfb",
+                "url": "https://github.com/igorw/evenement/zipball/v1.0.0",
+                "reference": "v1.0.0",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
-            "time": "1351867497",
+            "time": "2012-05-30 08:01:08",
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0-dev"
-                }
-            },
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Evenement": "src"
@@ -70,7 +65,7 @@
                     "dev-master": "1.0-dev"
                 }
             },
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "React\\Curry": "src"
@@ -124,17 +119,17 @@
         },
         {
             "name": "react/event-loop",
-            "version": "dev-master",
+            "version": "v0.2.2",
             "target-dir": "React/EventLoop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/event-loop",
-                "reference": "9388c315bd2ef516ce465fd7de6d179f5c450fbc"
+                "reference": "v0.2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reactphp/event-loop/archive/9388c315bd2ef516ce465fd7de6d179f5c450fbc.zip",
-                "reference": "9388c315bd2ef516ce465fd7de6d179f5c450fbc",
+                "url": "https://github.com/reactphp/event-loop/zipball/v0.2.2",
+                "reference": "v0.2.2",
                 "shasum": ""
             },
             "require": {
@@ -143,14 +138,14 @@
             "suggest": {
                 "ext-libevent": ">=0.0.5"
             },
-            "time": "1352121935",
+            "time": "2012-09-10 05:53:22",
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-master": "0.2-dev"
-                }
+                "branch-alias": [
+
+                ]
             },
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "React\\EventLoop": ""
@@ -188,7 +183,7 @@
                     "dev-master": "1.0-dev"
                 }
             },
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "React\\Promise": "src/"
@@ -209,33 +204,33 @@
         },
         {
             "name": "react/socket",
-            "version": "dev-master",
+            "version": "v0.2.2",
             "target-dir": "React/Socket",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/socket",
-                "reference": "84ea91324b8f621efd34679dad4600f8e61b7021"
+                "reference": "v0.2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reactphp/socket/archive/84ea91324b8f621efd34679dad4600f8e61b7021.zip",
-                "reference": "84ea91324b8f621efd34679dad4600f8e61b7021",
+                "url": "https://github.com/reactphp/socket/zipball/v0.2.2",
+                "reference": "v0.2.2",
                 "shasum": ""
             },
             "require": {
-                "evenement/evenement": "1.0.*",
                 "php": ">=5.3.3",
+                "evenement/evenement": "1.0.*",
                 "react/event-loop": "0.2.*",
                 "react/stream": "0.2.*"
             },
-            "time": "1352121935",
+            "time": "2012-09-10 05:56:19",
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-master": "0.2-dev"
-                }
+                "branch-alias": [
+
+                ]
             },
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "React\\Socket": ""
@@ -251,34 +246,34 @@
         },
         {
             "name": "react/stream",
-            "version": "dev-master",
+            "version": "v0.2.2",
             "target-dir": "React/Stream",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/stream",
-                "reference": "f44ee584058dbd30d471a4c210071a5618e61545"
+                "reference": "v0.2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reactphp/stream/archive/f44ee584058dbd30d471a4c210071a5618e61545.zip",
-                "reference": "f44ee584058dbd30d471a4c210071a5618e61545",
+                "url": "https://github.com/reactphp/stream/zipball/v0.2.2",
+                "reference": "v0.2.2",
                 "shasum": ""
             },
             "require": {
-                "evenement/evenement": "1.0.*",
-                "php": ">=5.3.3"
+                "php": ">=5.3.3",
+                "evenement/evenement": "1.0.*"
             },
             "suggest": {
                 "react/event-loop": "0.2.*"
             },
-            "time": "1352121935",
+            "time": "2012-10-28 03:28:34",
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-master": "0.2-dev"
-                }
+                "branch-alias": [
+
+                ]
             },
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "React\\Stream": ""
