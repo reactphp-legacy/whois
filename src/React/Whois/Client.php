@@ -2,52 +2,61 @@
 
 namespace React\Whois;
 
-use React\Async\Util as Async;
+use React\Promise\Deferred;
 use React\Curry\Util as Curry;
 use React\Dns\Resolver\Resolver;
+use React\Stream\ReadableStreamInterface;
 
 class Client
 {
-    private $resolver;
+    private $dns;
     private $connFactory;
 
-    public function __construct(Resolver $resolver, $connFactory)
+    public function __construct(Resolver $dns, $connFactory)
     {
-        $this->resolver = $resolver;
+        $this->dns = $dns;
         $this->connFactory = $connFactory;
     }
 
-    public function query($domain, $callback)
+    public function query($domain)
     {
-        Async::waterfall(
-            array(
-                Curry::bind(array($this, 'resolveWhoisServer'), $domain),
-                Curry::bind(array($this, 'queryWhoisServer'), $domain),
-            ),
-            $callback
-        );
+        return $this
+            ->resolveWhoisServer($domain)
+            ->then(Curry::bind(array($this, 'queryWhoisServer'), $domain));
     }
 
-    public function resolveWhoisServer($domain, $callback)
+    public function resolveWhoisServer($domain)
     {
+        $deferred = new Deferred();
+
         $tld = substr(strrchr($domain, '.'), 1);
         $target = $tld.'.whois-servers.net';
 
-        $this->resolver->resolve($target, $callback);
+        $this->dns->resolve($target, array($deferred, 'resolve'));
+
+        return $deferred->promise();
     }
 
-    public function queryWhoisServer($domain, $ip, $callback)
+    public function queryWhoisServer($domain, $ip)
     {
-        $result = '';
-
         $conn = call_user_func($this->connFactory, $ip);
         $conn->write("$domain\r\n");
-        $conn->on('data', function ($data) use (&$result) {
-            $result .= $data;
-        });
-        $conn->on('close', function () use (&$result, $callback) {
-            $result = str_replace("\r\n", "\n", $result);
-            $callback($result);
-        });
+
+        return $this
+            ->streamGetContents($conn)
+            ->then(array($this, 'normalizeLinefeeds'));
+    }
+
+    public function normalizeLinefeeds($data)
+    {
+        return str_replace("\r\n", "\n", $data);
+    }
+
+    public function streamGetContents(ReadableStreamInterface $input)
+    {
+        $contents = new BufferedStreamPromise();
+        $input->pipe($contents);
+
+        return $contents;
     }
 }

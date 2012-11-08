@@ -1,9 +1,9 @@
 {
-    "hash": "58ecd3caf4ab0b7382973d54641dcb06",
+    "hash": "1edd7eb3cbc7e76af1041afd0d1b9b66",
     "packages": [
         {
             "name": "evenement/evenement",
-            "version": "1.0.x-dev",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/igorw/evenement",
@@ -18,9 +18,9 @@
             "require": {
                 "php": ">=5.3.0"
             },
-            "time": "1338390068",
+            "time": "2012-05-30 08:01:08",
             "type": "library",
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Evenement": "src"
@@ -42,61 +42,30 @@
             ]
         },
         {
-            "name": "react/async",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/reactphp/async",
-                "reference": "1f1f415c408cfdccbbec0b3178a5fe60954f871a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/reactphp/async/zipball/1f1f415c408cfdccbbec0b3178a5fe60954f871a",
-                "reference": "1f1f415c408cfdccbbec0b3178a5fe60954f871a",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "react/event-loop": "dev-master"
-            },
-            "time": "1351351036",
-            "type": "library",
-            "installation-source": "source",
-            "autoload": {
-                "psr-0": {
-                    "React\\Async": "src"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "description": "Async utilities for React.",
-            "keywords": [
-                "async"
-            ]
-        },
-        {
             "name": "react/curry",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/curry",
-                "reference": "36b3688c27a6f51368fe73364cc84f2d12a700b1"
+                "reference": "v1.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reactphp/curry/zipball/36b3688c27a6f51368fe73364cc84f2d12a700b1",
-                "reference": "36b3688c27a6f51368fe73364cc84f2d12a700b1",
+                "url": "https://github.com/reactphp/curry/archive/v1.0.0.zip",
+                "reference": "v1.0.0",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
-            "time": "1351351089",
+            "time": "2012-11-07 22:56:31",
             "type": "library",
-            "installation-source": "source",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "React\\Curry": "src"
@@ -114,24 +83,24 @@
         },
         {
             "name": "react/dns",
-            "version": "v0.2.1",
+            "version": "v0.2.2",
             "target-dir": "React/Dns",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/dns",
-                "reference": "v0.2.1"
+                "reference": "v0.2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reactphp/dns/zipball/v0.2.1",
-                "reference": "v0.2.1",
+                "url": "https://github.com/reactphp/dns/zipball/v0.2.2",
+                "reference": "v0.2.2",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2",
                 "react/socket": "0.2.*"
             },
-            "time": "2012-09-24 07:50:30",
+            "time": "2012-10-24 08:04:15",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -150,17 +119,17 @@
         },
         {
             "name": "react/event-loop",
-            "version": "v0.2.1",
+            "version": "v0.2.2",
             "target-dir": "React/EventLoop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/event-loop",
-                "reference": "v0.2.1"
+                "reference": "v0.2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reactphp/event-loop/zipball/v0.2.1",
-                "reference": "v0.2.1",
+                "url": "https://github.com/reactphp/event-loop/zipball/v0.2.2",
+                "reference": "v0.2.2",
                 "shasum": ""
             },
             "require": {
@@ -191,18 +160,61 @@
             ]
         },
         {
+            "name": "react/promise",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/promise",
+                "reference": "v1.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/reactphp/promise/archive/v1.0.0.zip",
+                "reference": "v1.0.0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "time": "2012-11-07 21:24:54",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-0": {
+                    "React\\Promise": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Sorgalla",
+                    "email": "jsorgalla@googlemail.com",
+                    "homepage": "http://sorgalla.com",
+                    "role": "maintainer"
+                }
+            ],
+            "description": "A lightweight implementation of CommonJS Promises/A for PHP"
+        },
+        {
             "name": "react/socket",
-            "version": "v0.2.1",
+            "version": "v0.2.2",
             "target-dir": "React/Socket",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/socket",
-                "reference": "v0.2.1"
+                "reference": "v0.2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reactphp/socket/zipball/v0.2.1",
-                "reference": "v0.2.1",
+                "url": "https://github.com/reactphp/socket/zipball/v0.2.2",
+                "reference": "v0.2.2",
                 "shasum": ""
             },
             "require": {
@@ -234,17 +246,17 @@
         },
         {
             "name": "react/stream",
-            "version": "v0.2.1",
+            "version": "v0.2.2",
             "target-dir": "React/Stream",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/stream",
-                "reference": "v0.2.1"
+                "reference": "v0.2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reactphp/stream/zipball/v0.2.1",
-                "reference": "v0.2.1",
+                "url": "https://github.com/reactphp/stream/zipball/v0.2.2",
+                "reference": "v0.2.2",
                 "shasum": ""
             },
             "require": {
@@ -254,7 +266,7 @@
             "suggest": {
                 "react/event-loop": "0.2.*"
             },
-            "time": "2012-10-13 13:12:04",
+            "time": "2012-10-28 03:28:34",
             "type": "library",
             "extra": {
                 "branch-alias": [
@@ -277,15 +289,12 @@
             ]
         }
     ],
-    "packages-dev": [
-
-    ],
+    "packages-dev": null,
     "aliases": [
 
     ],
-    "minimum-stability": "dev",
-    "stability-flags": {
-        "react/async": 20,
-        "react/curry": 20
-    }
+    "minimum-stability": "stable",
+    "stability-flags": [
+
+    ]
 }
