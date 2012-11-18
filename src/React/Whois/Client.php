@@ -6,6 +6,7 @@ use React\Promise\Deferred;
 use React\Curry\Util as Curry;
 use React\Dns\Resolver\Resolver;
 use React\Stream\ReadableStreamInterface;
+use React\Stream\BufferedSink;
 
 class Client
 {
@@ -27,14 +28,10 @@ class Client
 
     public function resolveWhoisServer($domain)
     {
-        $deferred = new Deferred();
-
         $tld = substr(strrchr($domain, '.'), 1);
         $target = $tld.'.whois-servers.net';
 
-        $this->dns->resolve($target, array($deferred, 'resolve'));
-
-        return $deferred->promise();
+        return $this->dns->resolve($target);
     }
 
     public function queryWhoisServer($domain, $ip)
@@ -54,9 +51,9 @@ class Client
 
     public function streamGetContents(ReadableStreamInterface $input)
     {
-        $contents = new BufferedStreamPromise();
-        $input->pipe($contents);
+        $sink = new BufferedSink();
+        $input->pipe($sink);
 
-        return $contents;
+        return $sink->promise();
     }
 }

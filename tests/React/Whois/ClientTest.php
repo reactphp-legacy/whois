@@ -2,6 +2,8 @@
 
 namespace React\Whois;
 
+use React\Promise\FulfilledPromise;
+
 class ClientTest extends TestCase
 {
     /** @test */
@@ -15,6 +17,7 @@ class ClientTest extends TestCase
             ->method('__invoke')
             ->with($result);
 
+        // whois.nic.io => 193.223.78.152
         $resolver = $this->getMockBuilder('React\Dns\Resolver\Resolver')
             ->disableOriginalConstructor()
             ->getMock();
@@ -22,10 +25,7 @@ class ClientTest extends TestCase
             ->expects($this->once())
             ->method('resolve')
             ->with('io.whois-servers.net')
-            ->will($this->returnCallback(function ($domain, $callback) {
-                // whois.nic.io
-                call_user_func($callback, '193.223.78.152');
-            }));
+            ->will($this->returnValue(new FulfilledPromise('193.223.78.152')));
 
         $conn = $this->getMockBuilder('React\Whois\Stub\ConnectionStub')
             ->setMethods(array(
