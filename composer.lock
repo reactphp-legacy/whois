@@ -42,6 +42,47 @@
             ]
         },
         {
+            "name": "react/cache",
+            "version": "v0.2.6",
+            "target-dir": "React/Cache",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/cache",
+                "reference": "v0.2.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/reactphp/cache/archive/v0.2.6.zip",
+                "reference": "v0.2.6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "react/promise": "1.0.*"
+            },
+            "time": "2012-12-24 22:58:30",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.2-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-0": {
+                    "React\\Cache": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Async caching.",
+            "keywords": [
+                "cache"
+            ]
+        },
+        {
             "name": "react/curry",
             "version": "v1.0.0",
             "source": {
@@ -83,32 +124,39 @@
         },
         {
             "name": "react/dns",
-            "version": "v0.2.4",
+            "version": "v0.2.6",
             "target-dir": "React/Dns",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/dns",
-                "reference": "v0.2.4"
+                "reference": "v0.2.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reactphp/dns/archive/v0.2.4.zip",
-                "reference": "v0.2.4",
+                "url": "https://github.com/reactphp/dns/archive/v0.2.6.zip",
+                "reference": "v0.2.6",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2",
+                "react/cache": "0.2.*",
                 "react/socket": "0.2.*",
                 "react/promise": "1.0.*"
             },
-            "time": "2012-11-17 16:59:43",
+            "time": "2012-12-26 16:57:51",
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.2-dev"
+                }
+            },
             "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "React\\Dns": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -120,17 +168,17 @@
         },
         {
             "name": "react/event-loop",
-            "version": "v0.2.4",
+            "version": "v0.2.6",
             "target-dir": "React/EventLoop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/event-loop",
-                "reference": "v0.2.4"
+                "reference": "v0.2.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reactphp/event-loop/archive/v0.2.4.zip",
-                "reference": "v0.2.4",
+                "url": "https://github.com/reactphp/event-loop/archive/v0.2.6.zip",
+                "reference": "v0.2.6",
                 "shasum": ""
             },
             "require": {
@@ -140,7 +188,7 @@
                 "ext-libevent": ">=0.0.5",
                 "ext-libev": "*"
             },
-            "time": "2012-11-12 23:00:05",
+            "time": "2012-12-26 16:56:12",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -153,6 +201,7 @@
                     "React\\EventLoop": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -206,17 +255,17 @@
         },
         {
             "name": "react/socket",
-            "version": "v0.2.4",
+            "version": "v0.2.6",
             "target-dir": "React/Socket",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/socket",
-                "reference": "v0.2.4"
+                "reference": "v0.2.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reactphp/socket/archive/v0.2.4.zip",
-                "reference": "v0.2.4",
+                "url": "https://github.com/reactphp/socket/archive/v0.2.6.zip",
+                "reference": "v0.2.6",
                 "shasum": ""
             },
             "require": {
@@ -225,7 +274,7 @@
                 "react/event-loop": "0.2.*",
                 "react/stream": "0.2.*"
             },
-            "time": "2012-11-05 13:25:35",
+            "time": "2012-12-14 00:58:14",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -238,6 +287,7 @@
                     "React\\Socket": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -248,17 +298,17 @@
         },
         {
             "name": "react/stream",
-            "version": "v0.2.4",
+            "version": "v0.2.6",
             "target-dir": "React/Stream",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/stream",
-                "reference": "v0.2.4"
+                "reference": "v0.2.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reactphp/stream/archive/v0.2.4.zip",
-                "reference": "v0.2.4",
+                "url": "https://github.com/reactphp/stream/archive/v0.2.6.zip",
+                "reference": "v0.2.6",
                 "shasum": ""
             },
             "require": {
@@ -266,9 +316,10 @@
                 "evenement/evenement": "1.0.*"
             },
             "suggest": {
-                "react/event-loop": "0.2.*"
+                "react/event-loop": "0.2.*",
+                "react/promise": "1.0.*"
             },
-            "time": "2012-11-18 00:18:39",
+            "time": "2012-12-14 00:58:14",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -281,6 +332,7 @@
                     "React\\Stream": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
