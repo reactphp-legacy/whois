@@ -1,5 +1,5 @@
 {
-    "hash": "5f7f095d564c748864dd6774182c46b4",
+    "hash": "d9e705226661370ebf07a41ac9dbc101",
     "packages": [
         {
             "name": "evenement/evenement",
@@ -20,7 +20,6 @@
             },
             "time": "2012-05-30 08:01:08",
             "type": "library",
-            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Evenement": "src"
@@ -43,17 +42,17 @@
         },
         {
             "name": "react/cache",
-            "version": "v0.2.6",
+            "version": "v0.2.7",
             "target-dir": "React/Cache",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/cache",
-                "reference": "v0.2.6"
+                "reference": "v0.2.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reactphp/cache/archive/v0.2.6.zip",
-                "reference": "v0.2.6",
+                "url": "https://github.com/reactphp/cache/archive/v0.2.7.zip",
+                "reference": "v0.2.7",
                 "shasum": ""
             },
             "require": {
@@ -67,7 +66,6 @@
                     "dev-master": "0.2-dev"
                 }
             },
-            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "React\\Cache": ""
@@ -106,7 +104,6 @@
                     "dev-master": "1.0-dev"
                 }
             },
-            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "React\\Curry": "src"
@@ -124,17 +121,17 @@
         },
         {
             "name": "react/dns",
-            "version": "v0.2.6",
+            "version": "v0.2.7",
             "target-dir": "React/Dns",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/dns",
-                "reference": "v0.2.6"
+                "reference": "v0.2.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reactphp/dns/archive/v0.2.6.zip",
-                "reference": "v0.2.6",
+                "url": "https://github.com/reactphp/dns/archive/v0.2.7.zip",
+                "reference": "v0.2.7",
                 "shasum": ""
             },
             "require": {
@@ -150,7 +147,6 @@
                     "dev-master": "0.2-dev"
                 }
             },
-            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "React\\Dns": ""
@@ -168,17 +164,17 @@
         },
         {
             "name": "react/event-loop",
-            "version": "v0.2.6",
+            "version": "v0.2.7",
             "target-dir": "React/EventLoop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/event-loop",
-                "reference": "v0.2.6"
+                "reference": "v0.2.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reactphp/event-loop/archive/v0.2.6.zip",
-                "reference": "v0.2.6",
+                "url": "https://github.com/reactphp/event-loop/archive/v0.2.7.zip",
+                "reference": "v0.2.7",
                 "shasum": ""
             },
             "require": {
@@ -188,14 +184,13 @@
                 "ext-libevent": ">=0.0.5",
                 "ext-libev": "*"
             },
-            "time": "2012-12-26 16:56:12",
+            "time": "2013-01-05 11:41:26",
             "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "0.2-dev"
                 }
             },
-            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "React\\EventLoop": ""
@@ -234,7 +229,6 @@
                     "dev-master": "1.0-dev"
                 }
             },
-            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "React\\Promise": "src/"
@@ -255,17 +249,17 @@
         },
         {
             "name": "react/socket",
-            "version": "v0.2.6",
+            "version": "v0.2.7",
             "target-dir": "React/Socket",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/socket",
-                "reference": "v0.2.6"
+                "reference": "v0.2.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reactphp/socket/archive/v0.2.6.zip",
-                "reference": "v0.2.6",
+                "url": "https://github.com/reactphp/socket/archive/v0.2.7.zip",
+                "reference": "v0.2.7",
                 "shasum": ""
             },
             "require": {
@@ -281,7 +275,6 @@
                     "dev-master": "0.2-dev"
                 }
             },
-            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "React\\Socket": ""
@@ -298,17 +291,17 @@
         },
         {
             "name": "react/stream",
-            "version": "v0.2.6",
+            "version": "v0.2.7",
             "target-dir": "React/Stream",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/stream",
-                "reference": "v0.2.6"
+                "reference": "v0.2.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reactphp/stream/archive/v0.2.6.zip",
-                "reference": "v0.2.6",
+                "url": "https://github.com/reactphp/stream/archive/v0.2.7.zip",
+                "reference": "v0.2.7",
                 "shasum": ""
             },
             "require": {
@@ -326,7 +319,6 @@
                     "dev-master": "0.2-dev"
                 }
             },
-            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "React\\Stream": ""
@@ -343,7 +335,9 @@
             ]
         }
     ],
-    "packages-dev": null,
+    "packages-dev": [
+
+    ],
     "aliases": [
 
     ],

@@ -6,7 +6,7 @@
     "require": {
         "php": ">=5.3.2",
         "react/curry": "1.0.*",
-        "react/promise": "1.0.*",
+        "react/promise": "~1.0",
         "react/dns": "0.2.*",
         "react/socket": "0.2.*",
         "react/stream": "0.2.*"
