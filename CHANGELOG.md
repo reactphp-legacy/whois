@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+* 0.2.0 (2013-08-08)
+
+  * Bump react dependencies to 0.3.*
+
 * 0.1.1 (2012-11-18)
 
   * Use promise-based DNS resolver in react/dns v0.2.4
