@@ -39,21 +39,12 @@ class Client
         $conn = call_user_func($this->connFactory, $ip);
         $conn->write("$domain\r\n");
 
-        return $this
-            ->streamGetContents($conn)
+        return BufferedSink::createPromise($conn)
             ->then(array($this, 'normalizeLinefeeds'));
     }
 
     public function normalizeLinefeeds($data)
     {
         return str_replace("\r\n", "\n", $data);
-    }
-
-    public function streamGetContents(ReadableStreamInterface $input)
-    {
-        $sink = new BufferedSink();
-        $input->pipe($sink);
-
-        return $sink->promise();
     }
 }
