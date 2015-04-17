@@ -1,6 +1,6 @@
 <?php
 
-namespace React\Whois\Stub;
+namespace React\Tests\Whois\Stub;
 
 class CallableStub
 {
