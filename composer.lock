@@ -1,21 +1,23 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
-    "hash": "a4045d046828b5afc6faa0cb61e15673",
+    "hash": "5776607f4b841657af718fce7fc910b7",
+    "content-hash": "b14269e1aae6a39bfdc76737c9001d7f",
     "packages": [
         {
             "name": "evenement/evenement",
             "version": "v1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/igorw/evenement",
+                "url": "https://github.com/igorw/evenement.git",
                 "reference": "v1.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/igorw/evenement/zipball/v1.0.0",
+                "url": "https://api.github.com/repos/igorw/evenement/zipball/v1.0.0",
                 "reference": "v1.0.0",
                 "shasum": ""
             },
@@ -89,12 +91,12 @@
             "version": "v1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/reactphp/curry",
+                "url": "https://github.com/reactphp/curry.git",
                 "reference": "v1.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/reactphp/curry/archive/v1.0.0.zip",
+                "url": "https://api.github.com/repos/reactphp/curry/zipball/v1.0.0",
                 "reference": "v1.0.0",
                 "shasum": ""
             },
@@ -121,6 +123,7 @@
                 "currying",
                 "functional-programming"
             ],
+            "abandoned": "react/partial",
             "time": "2012-11-07 22:56:31"
         },
         {
@@ -340,20 +343,14 @@
             "time": "2013-07-09 00:44:12"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": {
         "php": ">=5.3.2"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": []
 }
