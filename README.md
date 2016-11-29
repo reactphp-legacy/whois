@@ -3,6 +3,7 @@
 Whois client based on React.
 
 [![Build Status](https://secure.travis-ci.org/reactphp/whois.png?branch=master)](http://travis-ci.org/reactphp/whois)
+[![Dependency Status](https://www.versioneye.com/php/react:whois/badge.svg)](https://www.versioneye.com/php/react:whois)
 
 ## Install
 
