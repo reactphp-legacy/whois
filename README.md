@@ -2,7 +2,7 @@
 
 Whois client based on React.
 
-[![Build Status](https://secure.travis-ci.org/reactphp/whois.png?branch=master)](http://travis-ci.org/reactphp/whois)
+[![Build Status](https://secure.travis-ci.org/reactphp/whois.png?branch=master)](http://travis-ci.org/reactphp/whois) [![Code Climate](https://codeclimate.com/github/reactphp/whois/badges/gpa.svg)](https://codeclimate.com/github/reactphp/whois)
 
 ## Install
 
